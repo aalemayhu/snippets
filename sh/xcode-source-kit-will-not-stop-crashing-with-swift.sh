@@ -5,4 +5,4 @@
 kill $(ps aux | grep 'Xcode' | awk '{print $2}')
 rm -rvf ~/Library/Developer/Xcode/DerivedData/
 rm -rvf ~/Library/Caches/com.apple.dt.Xcode
-osascript -e 'tell app "System Events" to shut down'
+echo "To restart osascript -e 'tell app "System Events" to shut down'"
