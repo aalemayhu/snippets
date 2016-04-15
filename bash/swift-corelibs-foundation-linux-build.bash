@@ -32,7 +32,7 @@ main() {
 
   echo "We are ready to build, maybe?"
   echo utils/build-script --xctest --foundation -t
-  echo "Remember to update your PATH variable to something like \$PATH=\$HOME/src/apple/build/Ninja-DebugAssert/swift-linux-x86_64/bin:\"\$PATH\""
+  echo "Remember to update your PATH variable to something like \$PATH=\$HOME/src/github.com/apple/build/Ninja-DebugAssert/swift-linux-x86_64/bin:\"\$PATH\""
 }
 
 main
