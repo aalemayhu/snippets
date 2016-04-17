@@ -1,2 +1,7 @@
 #!/bin/bash
-~/src/github.com/apple/swift/utils/build-script --xctest --foundation -t  > /tmp/build-foundation-"`date`".log 2>&1
+
+build_script=~/src/github.com/apple/swift/utils/build-script
+log_path="/tmp/build-foundation-`date`.log"
+echo will run $build_script --xctest --foundation -t  > $log_path  2>&1
+$build_script --xctest --foundation -t  > $log_path  2>&1
+echo See $log_path for output
