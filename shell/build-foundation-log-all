@@ -1,8 +1,9 @@
 #!/bin/bash
 
-commit_info="`git show -s --pretty='tformat: %h (%s, %ad)' --date=short`"
-build_script=~/src/github.com/apple/swift/utils/build-script
+swift_repository=~/src/github.com/apple/swift
+build_script=$swift_repository/utils/build-script
 log_path="/tmp/build-foundation-`date`.log"
+commit_info="`git -C $swift_repository show -s --pretty='tformat: %h (%s, %ad)' --date=short`"
 
 echo using $commit_info
 echo "will run $build_script --xctest --foundation -t  > $log_path  2>&1"
