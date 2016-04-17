@@ -1,0 +1,3 @@
+#!/bin/bash
+# From: http://hints.macworld.com/article.php?story=20051225101106519
+man -t $1 |  open -f -a /Applications/Preview.app
