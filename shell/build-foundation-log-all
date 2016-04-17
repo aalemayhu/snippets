@@ -1,0 +1,2 @@
+#!/bin/bash
+~/src/github.com/apple/swift/utils/build-script --xctest --foundation -t  > /tmp/build.log 2>&1  
