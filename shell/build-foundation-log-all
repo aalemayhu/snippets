@@ -9,3 +9,5 @@ echo using $commit_info
 echo "will run $build_script --xctest --foundation -t  > $log_path  2>&1"
 $build_script --xctest --foundation -t  > "$log_path"  2>&1
 echo See $log_path for output
+
+cat "$log_path" | mail -s "Built foundation `hostname` using $commit_info" alexander@alemayhu.com
